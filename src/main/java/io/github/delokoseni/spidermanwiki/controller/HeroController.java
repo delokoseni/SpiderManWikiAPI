@@ -12,6 +12,6 @@ public class HeroController {
 
     @GetMapping("/{name}")
     public Hero getHero(@PathVariable String name) {
-        return new Hero(name, "Spider from Marvel universe");
+        return new Hero("Peter Parker", "Spider from Marvel universe");
     }
 }
